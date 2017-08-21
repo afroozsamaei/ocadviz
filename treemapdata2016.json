@@ -1,0 +1,113 @@
+{
+    "name": "",
+    "fullname": "",
+    "size": 151719138,
+    "children": [
+        {
+            "name": "Revenue",
+            "fullname": "Revenue",
+            "size": 73278068,
+            "children": [
+                {
+                    "name": "Provincial",
+                    "fullname": "Provincial Grants",
+                    "size": 25217925
+        },
+                {
+                    "name": "Student",
+                    "fullname": "Student Fees",
+                    "size": 35217505
+        },
+                {
+                    "name": "Research",
+                    "fullname": "Research Contributions",
+                    "size": 3824363
+        },
+                {
+                    "name": "Classes",
+                    "fullname": "Class Fees and Supply Sales",
+                    "size": 879577
+        },
+                {
+                    "name": "Investment",
+                    "fullname": "Investment",
+                    "size": 237010
+        },
+                {
+                    "name": "Donations",
+                    "fullname": "General Donations",
+                    "size": 1869275
+        },
+                {
+                    "name": "Bursaries",
+                    "fullname": "Bursary and Scholarship Donations",
+                    "size": 1152545
+        },
+                {
+                    "name": "Amortization",
+                    "fullname": "Amortization of Deferred Capital Contributions",
+                    "size": 2089527
+        },
+                {
+                    "name": "Rental",
+                    "fullname": "Rental",
+                    "size": 139912
+        },
+                {
+                    "name": "Other",
+                    "fullname": "Other",
+                    "size": 2650429
+        }
+      ]
+    },
+        {
+            "name": "Expenses",
+            "fullname": "Expenses",
+            "size": 78441070,
+            "children": [
+                {
+                    "name": "Academic",
+                    "fullname": "Academic",
+                    "size": 48016990,
+                    "children": [
+                        {
+                            "name": "Salaries",
+                            "fullname": "Salaries and Benefits",
+                            "size": 40512336
+                },
+                        {
+                            "name": "Support",
+                            "fullname": "Support",
+                            "size": 7504654
+                }
+            ]
+        },
+                {
+                    "name": "Non-academic",
+                    "fullname": "Non-academic",
+                    "size": 14823811
+        },
+                {
+                    "name": "Bursaries",
+                    "fullname": "Bursaries and Scholarships",
+                    "size": 2411237
+        },
+                {
+                    "name": "Facility",
+                    "fullname": "Facility Management and Operating",
+                    "size": 7524638
+        },
+                {
+                    "name": "Amortization",
+                    "fullname": "Amortization of Capital Assets",
+                    "size": 3661203
+        },
+                {
+                    "name": "Interest",
+                    "fullname": "Interest",
+                    "size": 2003191
+        }
+      ]
+    }
+  ]
+}

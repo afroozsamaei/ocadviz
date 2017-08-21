@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>OCAD VIZ</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-icon" href="image/logo.png">
+    	<link rel="shortcut icon" sizes="57x57" href="image/logo.png">
+        
+        <link rel="stylesheet" href="themes/ocadtheme.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>	
+        
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+        
+   </head>
+ 
+<body>
+	   
+<!--HOME PAGE-->
+		
+        <div data-role="page" id="HomePage">
+            <div data-role="header" data-position="fixed">
+				 <p align="center">OCAD Viz </p>
+			</div>
+            <div data-role="content">
+				<div id="logo" align="middle"><img src="image/logo.png"></div>
+            	<h3 align="center">Welcome to OCAD Viz</h3>
+                <p align="center">Explore different types of data regarding OCAD University.</p><br>
+                <p>Choose a data category that you wish to explore:</p><br>
+                <ul data-role="listview">
+                    <li><a href="#page1" data-transition="slide">Revenue and Expenses</a></li>
+                    <li><a href="#page2" data-transition="slide">Qualifications Offered</a></li>
+                    <li><a href="#page3" data-transition="slide">Enrolment by Gender</a></li>
+                </ul> 
+            </div>
+           
+            <div data-role="footer" data-position="fixed">     
+			        <p align="center"> <a href="#DescriptionPage" data-transition="slide" data-direction="reverse" style="color: white" >About</a></p> 	
+            </div>
+        </div>
+
+<!-- PAGE 1- DATA REGARDING REVENUE AND EXPENSES -->
+	
+        <div data-role="page" id="page1">
+            <div data-role="header" data-position="fixed"> </div>
+            
+            <div data-role="content">
+                
+                <h3 align="center">Revenue and Expenses </h3> 
+						
+                <p>Following graph shows a detail of the data regarding OCAD University's revenue and expenses for the selected year. </p>
+                
+                <p><i class="fa fa-caret-right" style="color: black"></i> Tap on each section to see the related amount.</p>
+                    <p><i class="fa fa-caret-right" style="color: black"></i> Double-tap on each section to move that section to the centre of the graph.</p>
+                    <p><i class="fa fa-caret-right" style="color: black"></i> Double-tap on the circle at the center of the graph to zoom out.</p>
+                
+                <div class="form-group">
+                        <label class="year">Year</label>
+                        <select onchange="changeYear()" class="form-control" id="year-choice">
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                        </select>
+                </div>
+            
+                <div id="show-values"></div>   
+                <div id="graph"></div>
+                <script src="//d3js.org/d3.v3.min.js"></script>
+                <script src="scripts/treemapScript.js"></script>
+            </div>
+            <div data-role="footer" >     
+			        <p align="center"> <a href="#HomePage" data-transition="slide" data-direction="reverse" style="color: white">Back</a></p> 	
+            </div>
+        </div>
+    
+    <!-- PAGE 2- DATA REGARDING TOTAL QUALIFICATIONS-->
+	
+        <div data-role="page" id="page2">
+            <div data-role="header" data-position="fixed"> </div>
+            <div data-role="content">
+						
+                <h3 align="center">Qualifications Offered/Awarded</h3> 		
+                <p>Following graph shows the total number of qualifications and degrees offered for the selected academic year. </p>
+                <div class="form-group">
+                        <label class="year">Year</label>
+                        <select class="form-control">
+                            <option value="2014-2015">2014-2015</option>
+                        </select>
+                </div>
+                <div id="piechart-legend"></div>
+                <div id="piechart"></div>
+                <script src="//d3js.org/d3.v3.min.js"></script>
+                <script src="scripts/pieChartScript.js"></script>
+            </div>
+            
+            <div data-role="footer" >     
+			        <p align="center"> <a href="#HomePage" data-transition="slide" data-direction="reverse" style="color: white">Back</a></p> 	
+            </div>
+        </div>
+
+	
+
+
+<!-- PAGE 3 - DATA REGARDING ENROLMENT BY GENDER -->
+
+       <div data-role="page" id="page3">
+	       <div data-role="header" data-position="fixed">  </div>
+           
+           <div data-role="content">		
+                <h3 align="center">Enrolment by Gender </h3> 		
+                <p>Following graph shows the total number of enrolments for the selected year in Bachelor's and Master's degrees based on full-time (F) and part-time (P) enrolments. </p>
+               
+                <div class="form-group">
+                        <label class="year">Year</label>
+                        <select class="form-control">
+                            <option value="2014-2015">2014-2015</option>
+                        </select>
+                </div>
+               
+                <div id="stackedchart"> </div>
+                <script src="//d3js.org/d3.v4.min.js"></script>
+                <script src="scripts/stackedBarChartScript.js"></script>
+            </div>
+         
+           <div data-role="footer" >     
+			        <p align="center"> <a href="#HomePage" data-transition="slide" data-direction="reverse" style="color: white">Back</a></p> 	
+           </div>
+         
+      </div>
+            
+
+ <!-- DESCRIPTION PAGE -->
+
+        <div data-role="page" id="DescriptionPage">
+            <div data-role="header" data-position="fixed"></div>
+            <div data-role="content">
+                <h3 align="center">About OCAD Viz </h3> 		
+                <p>OCAD Viz is a web app which contains visualizations of different types of data regarding OCAD University. The visualizations are developed using d3.js and code examples written by Mike Bostock. The data are taken from <a href="https://www.ocadu.ca/about/accountability.htm">OCAD University Accountability</a>.</p><br>
+                <p>Developer: Afrooz Samaei</p>
+				
+            </div>  
+            <div data-role="footer"  data-position="fixed">     
+			        <p align="center"> <a href="#HomePage" data-transition="slide" style="color: white">Home</a></p> 	
+            </div>
+        </div>   
+      
+</body>
+
+</html>

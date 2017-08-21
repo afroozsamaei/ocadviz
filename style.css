@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body p {
+    font-size: 12px;
+}
+
+#graph {
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#graph g {
+    cursor: pointer;
+}
+
+#logo img {
+    margin: auto;
+    width: 200px;
+    height: auto;
+}
+
+#logo {
+    align-content: center;
+}
+
+
+#show-values {
+    position: absolute;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+#value1 {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: left;
+}
+
+#value2 {
+    font-weight: 600;
+    font-size: 12px;
+    text-align: left;
+    color: #666;
+}
+
+#value3 {
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    color: #666;
+}
+
+path {
+    stroke: #fff;
+    fill-rule: evenodd;
+}
+
+.fa fa-caret-right {
+    display: inline;
+}
+
+.labels {
+    font-size: 8px;
+}
+
+#piechart-legend {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#piechart {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+#stackedchart {
+    margin-top: 50px
+}
